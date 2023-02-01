@@ -5,51 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Meu site Pet</title>
 </head>
 
-<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #B0E0E6;">
-    <!--Cria a tabela para definir a estrutura do site-->
-    <table align="center" width="100%" bgcolor="#B0E0E6">
-        <!--Linha 1-->
-        <tr>
-            <td>
-                <img width="100%" src="banner.png" alt="banner do site." title="Meu Pet">
-            </td>
-        </tr>
+<body>
 
-        <!--Linha 2-->
-        <tr>
-            <th>
-                <a href="index.html">HOME</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-                <a href="produtos.html">PRODUTOS</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-                <a href="contato.html">CONTATO</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-                <a href="sobre.html">QUEM SOMOS</a>
-            </th>
-        </tr>
+    <header class="cabecalho">
+        <div class="cabecalho-banner">
+            <img src="banner.png" alt="banner do site." title="Meu Pet">
+        </div>
+            
+        <nav class="navegacao">
+            <div class="navegacao-container">
+                <a class="menu" href="index.html">HOME</a> 
+                <a class="menu" href="produtos.html">PRODUTOS</a>
+                <a class="menu" href="contato.html">CONTATO</a>
+                <a class="menu" href="sobre.html">SOBRE</a>
+            </div>
+        </nav>
+    </header>
 
-        <!--Linha 3-->
-        <tr height="420px" valign="top">
-            <td>
-                <h1>Contato </h1>
-                <button href="#">Whatsapp</button>
-                <button href="#">E-mail</button>
+    <main class="conteudo">
+        <div class="conteudo-container">
+            <h1>Contato</h1>
+            <div class="conteudo-container">            
+                <a href="#">Whatsapp</a>
+                <a href="#">E-mail</a>
+            </div>
 
-            </td>
-        </tr>
+        </div>    
+    </main>
 
-        <!--Linha 4-->
-        <tr>
-            <td height="50px" bgcolor="#4682B4">
-                <font>
-                    Entre em contato através do e-mail: contato@meupet.com.br
-                    <br>
-                    ou utilize nosso telefone de contato(whatsapp): (94)99999-9999
-                </font>
-            </td>
-        </tr>
-
-    </table>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <p>
+                Entre em contato através do e-mail: <a href="#">www.meupet.com.br</a>
+                <br>
+                ou utilize nosso telefone de contato(whatsapp): (94)99999-9999
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
