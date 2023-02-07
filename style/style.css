@@ -39,7 +39,7 @@ body{
 
 .navegacao .list{
     display: flex; 
-    flex-wrap: wrap;
+
     flex-direction: row;
     width: 100%;
     padding-top: 30px;
@@ -156,8 +156,9 @@ a{
 }
 
 @media (max-width: 700px) {
-    .navegacao-container {
-        flex-direction: column;
+    .navegacao .list{
+        display: flex;
+        flex-wrap: wrap;
         align-items: start;
         text-align: left;
     }
